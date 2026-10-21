@@ -3,8 +3,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Words test = new Words();
-        while(true) {
-            test.addWord(scanner.nextLine());
+        boolean myBool = true;
+        while(myBool == true) {
+            myBool = test.addWord(scanner.nextLine());
             System.out.println(test);
         }
     }

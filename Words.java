@@ -4,15 +4,16 @@ public class Words {
     public Words() {
 
     }
-    public void addWord(String word) {
+    public boolean addWord(String word) {
         for(String i: words) {
             if(word.equals(i)) {
                 System.out.println("Duplicate word! Skipping it"); 
-                return;
+                return false;
             }
         }
         System.out.println("Good word!");
         words.add(word);
+        return true;
     }
     public String toString() {
         String list = "";
