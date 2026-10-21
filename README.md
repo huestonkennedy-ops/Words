@@ -1,0 +1,1 @@
+This program takes words from user input and keeps addsing them to a list, but rejects it if that word is already in the list. 
